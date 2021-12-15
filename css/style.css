@@ -1,5 +1,5 @@
-body {
-    background: #E5E5E5;
+body{
+    background: #e5e5e5;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -9,21 +9,23 @@ body {
     box-sizing: border-box;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+header {
+    padding-block: 66px 100px;
 }
 
-.header {
+.header-first {
     width: 1130px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.header-left {
-    /* margin: 66px 108px 125px 0px; */
+.header-first-part {
+    display: flex;
+   
+}
+
+.header-logo {
     margin-right: 108px;
 }
 
@@ -33,7 +35,6 @@ body {
     width: 398px;
     justify-content: space-evenly;
     margin-top: 10px;
-    margin: 72px 530px 130px 0px;
     align-items: center;
 }
 
@@ -41,41 +42,43 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: #25202F;
+    color: #25202f;
     text-decoration: none;
     opacity: 0.6;
 }
-.header-list-item .active {
-    opacity: 1;
+
+.active {
+    opacity: 0.9;
     font-weight: 500;
 }
 
 .header-button {
-    margin: 50px 0px;
     width: 70px;
     height: 70px;
     border-radius: 100%;
-    box-shadow: 0px 20px 50px rgba(198, 185, 233, 0.3);
+    box-shadow: 0px 20px 50px #c6b9e94d;
     border: none;
 }
 
-#hero-section {
+#hero { 
     display: flex;
+    width: 1130px;
     margin: 0 auto;
     justify-content: space-between;
-    /* width: 1130px; */
 }
 
-.hero-left {
+.hero-description {
     width: 358px;
-    margin: 0px 142px 268px 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero-text-hello {
+.hero-text {
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
-    color: #25202F;
+    color: #25202f;
 }
 
 .hero-title {
@@ -86,60 +89,61 @@ body {
     color: #3f3d3d;
 }
 
-.hero-text-job {
+.hero-par{
     margin-block: 20px 50px;
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
-    color: #25202F;
+    color: #25202f;
 }
 
-.hero-button {
+.hero-button{
     width: 200px;
     height: 60px;
-    background: #8643DC;
+    background: #8643dc;
     border-radius: 100px;
     font-weight: 500;
-    font-size: 24px;
+     -size: 24px;
     line-height: 32px;
     text-align: center;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
 }
 
-.hero-right {
-    position: absolute;
+.hero-img{
     width: 535px;
     height: 622px;
-    left: 664px;
-    top: 46px;
+    margin-top: -60px;
 }
 
-.services-link {
+#services{
+    padding-block: 60px 60px;
+}
+
+.servic-span {
     margin: 0px 0px 10px 165px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #8643DC;
-    text-decoration: none;
+    color: #8643dc;
 }
 
-.services-line {
+.servic-line {
     margin-top: 10px;
     margin-left: 165px;
     width: 50px;
     height: 3px;
     border: none;
-    background-color: #8643DC;
+    background-color: #8643dc;
 }
 
-.services-title {
+.servic-title {
     margin: 15px 0px 50px 165px;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #25202F;
+    color: #25202f;
     width: 246px;
 }
 
@@ -160,34 +164,31 @@ body {
     margin-right: 20px;
 }
 
-.services-div-title {
+.services-list-title {
     margin: 15px 0px 35px  0px;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    color: #25202F;
+    color: #25202f;
 }
 
-.services-text {
+.services-par{
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
-    color: #47444E;
+    color: #47444e;
 }
 
-.portfolio {
-    margin-top: 100px;
-    margin-bottom: 100px;
+#portfolio{
+   padding-block: 100px 100px;
 }
 
-.portfolio-link {
+.portfolio-span {
     margin: 0px 0px 10px 165px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #8643DC;
-    text-decoration: none;
-
+    color: #8643dc;
 }
 
 .portfolio-line {
@@ -196,7 +197,7 @@ body {
     width: 50px;
     height: 3px;
     border: none;
-    background-color: #8643DC;
+    background-color: #8643dc;
 }
 
 .portfolio-title {
@@ -204,53 +205,48 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #000000;
+    color: #25202f;
     width: 246px;
 }
 
-.portfolio-div-link {
+.portfolio-link {
     position: absolute;
     width: 146px;
     height: 32px;
     left: 1095px;
-    top: 1368px;
+    top: 1498px;
 }
 
-.portfolio-div-link a {
-    text-decoration: none;
-}
-
-.portfolio-link .a {
+.portfolio-link a{
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
     text-decoration-line: underline;
-    color: #25202F;
+    color: #25202f;
 }
 
-.portfolio-link img {
-    margin-left: 5px;
-}
-
-.portfolio-img {
+.portfolio-imag {
     display: flex;
     width: 1210px;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-.clients {
- margin-block: 50px 50px;
+.portfolio-link img{
+    margin-left: 5px;
 }
 
-.clients-link {
+#clients{
+padding-block: 50px 50px;
+}
+
+.clients-span {
     margin: 0px 0px 10px 165px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #8643DC;
-    text-decoration: none;
+    color: #8643dc;
 }
 
 .clients-line {
@@ -259,7 +255,7 @@ body {
     width: 50px;
     height: 3px;
     border: none;
-    background-color: #8643DC;
+    background-color: #8643dc;
 }
 
 .clients-title {
@@ -267,8 +263,8 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #25202F;
-    width: 246px;    
+    color: #25202f;
+    width: 246px;
 }
 
 .clients-list{
@@ -292,41 +288,40 @@ body {
 }
 
 .slack{
-    background: #FFF7FA;
-    border: 1px solid #FFE7F0;
+    background: #fff7fa;
+    border: 1px solid #ffe7f0;
 }
 
 .medium{
-    background: #EDFFF5;
-    border: 1px solid #CAFFE1;
+    background: #edfff5;
+    border: 1px solid #caffe1;
 }
 
 .microsoft{
-    background: #F5FCFF;
-    border: 1px solid #DDF5FF;
+    background: #f5fcff;
+    border: 1px solid #ddf5ff;
 }
 
 .zeplin{
-    background: #FFFBF2;
-    border: 1px solid #FFEEC9;
+    background: #fffbf2;
+    border: 1px solid #ffeec9;
 }
 
 .shopify{
-    background: #F4FFED;
-    border: 1px solid #DBFFC4;
+    background: #f4ffed;
+    border: 1px solid #dbffc4;
 }
 
-.testimonals{
+#testimonals{
     padding-block: 70px 70px;
 }
 
-.testimonals-link {
+.testimonals-span {
     margin: 0px 0px 10px 165px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #8643dc;
-    text-decoration: none;
 }
 
 .testimonals-line {
@@ -335,7 +330,7 @@ body {
     width: 50px;
     height: 3px;
     border: none;
-    background-color: #8643DC;
+    background-color: #8643dc;
 }
 
 .testimonals-title {
@@ -343,7 +338,7 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #25202F;
+    color: #25202f;
     width: 246px;
 }
 
@@ -353,7 +348,7 @@ body {
     text-align: center;
 }
 
-.testimonals-text {
+.testimonals-par{
     margin-block:  25px 25px;
     text-align: center;
     font-weight: 500;
@@ -362,11 +357,12 @@ body {
     text-align: center;
     color: #636066;
 }
-.testimonals-div-img{
+
+.michaele{
     border-radius: 20%;
 }
 
-.testimonals-div-title{
+.testimonals-div-title {
     margin-block: 19px 5px;
     font-weight: 500;
     font-size: 20px;
@@ -374,35 +370,77 @@ body {
     text-align: center;
     color: #000000;
 }
-.dot {
+
+.dots{
     margin-top: 46px;
+    margin-right: 20px;
 }
 
-.blog {
-    margin-block: 70px 70px;
-    padding-top: 70px;
+.id1{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 174px;
+    top: 2907px;
+
+}
+.id2{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 330px;
+    top: 3177px;
+
+}
+.id3{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1054px;
+    top: 3175px;
+}
+
+.id4{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1173.37px;
+    top: 2874.02px;
+}
+
+#blog{
+    padding-block: 70px 70px;
+  padding-top: 70px;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
-    color: #8643DC;
+    color: #8643dc;
 }
 
-.blog-link {
+.blogs-span {
     margin: 0px 0px 10px 165px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #8643DC;
-    text-decoration: none;
+    color: #8643dc;
 }
 
-.blog-line {
+.blogs-line {
     margin-top: 10px;
     margin-left: 165px;
     width: 50px;
     height: 3px;
     border: none;
-    background-color: #8643DC;
+    background-color: #8643dc;
+}
+
+.blogs-title {
+    margin: 15px 0px 50px 165px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #25202f;
+    width: 246px;
 }
 
 .blog-div{
@@ -414,7 +452,7 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #25202F;
+    color: #25202f;
     width: 165px;
 }
 
@@ -437,22 +475,12 @@ body {
     margin-right: 20px;
 }
 
-.contact {
-    margin-block: 70px 70px;
-    padding-top: 70px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    color: #8643DC;
-}
-
-.contact-link {
+.contact-span {
     margin: 0px 0px 10px 165px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #8643DC;
-    text-decoration: none;
+    color: #8643dc;
 }
 
 .contact-line {
@@ -461,7 +489,7 @@ body {
     width: 50px;
     height: 3px;
     border: none;
-    background-color: #8643DC;
+    background-color: #8643dc;
 }
 
 .contact-div{
@@ -470,64 +498,64 @@ body {
     justify-content: space-between;
 }
 
-.contact-title{
+.contact-title {
     margin: 15px 0px 50px 165px;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #25202F;
+    color: #25202f;
     width: 512px;
 }
 
-.contact-div-link {
+.contact-link{
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     text-decoration-line: underline;
     text-transform: lowercase;
-    color: #8643DC;
+    color: #8643dc;
 }
 
-.contact-question {
+.contact-input{
     width: 1110px;
     height: 40px;
     background-color: transparent;
     display: block;
     margin: 45px auto;
     border: none;
-    border-bottom: 1px solid  #A8A0B0;;
+    border-bottom: 1px solid  #a8a0b0;;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    color: #A8A0B0;
+    color: #a8a0b0;
 }
 
 .contact-button{
     height: 60px;
     width: 200px;
-    background: #8643DC;
+    background: #8643dc;
     border-radius: 100px;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color:#ffffff;
     cursor: pointer;
     border: none;
     margin: 30px 0px 100px 165px;
 }
 
-.contact-footer {
+.contact-icons{
     width: 270px;
     margin: 0 auto;
 }
 
-.contact-footer-title {
+.contact-heading{
     font-weight: 500;
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    color: #21232D;
+    color: #21232d;
 }
 
 .contact-list{

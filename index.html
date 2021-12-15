@@ -4,83 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Zakob</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" 
+    rel="stylesheet">
+    <title>Adam Zakob</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-    <header> 
-        <div class="header container">
-            <div class="header-left">
+    
+    <header>
+        <div class="header-first">
+            <div class="header-first-part">
                <a href="index.html">
-                   <img src="imges/logo.svg" alt="logo">
+                   <img class="header-logo" src="imges/logo.svg" alt="logo">
                 </a> 
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li>
+                            <a class="header-list-link active"  href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-list-link" href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-list-link" href="#">
+                                Works
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-list-link" href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul> 
+                </nav>
             </div>
-            <nav class="header-right">
-                <ul class="header-list">
-                    <li class="header-list-item">
-                        <a class="header-list-link active"  href="#">
-                            About
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a class="header-list-link" href="#">
-                            Services
-                        </a> 
-                    </li>
-                    <li class="header-list-item">
-                        <a class="header-list-link" href="#">
-                            Works
-                        </a>
-                    </li>
-                    <li class="header-list-item">
-                        <a class="header-list-link" href="#">
-                            Blog
-                        </a>
-                    </li>
-                </ul> 
-            </nav>
-            <button class="header-button"> 
+            <button class="header-button">
                 <img src="imges/line.png" alt="line" width="22" height="15">
             </button>
         </div>  
-        <section id="hero-section"> 
-            <div class="hero-left">
-                <p class="hero-text-hello">Hello,</p>
+        <section id="hero"> 
+            <div class="hero-description">
+                <p class="hero-text">Hello,</p>
                 <h1 class="hero-title">Adam Zakob</h1>
-                <p class="hero-text-job">a freelance UX Designer</p>
+                <p class="hero-par">a freelance UX Designer</p>
                 <button class="hero-button">Let's Talk</button>
             </div>
-            <div class="hero-right">
+            <div class="hero-img">
                 <img src="imges/user.png" alt="user">
             </div>
         </section>
     </header>
 
-    <!-- Main -->
-
-    <main class="main container">
-
-        <!-- Services -->
-
-        <section class="services">
-            <a class="services-link" href="#">
+    <main>
+        
+        <section id="services">
+            <span class="servic-span">
                 Services
-            </a>
-            <hr class="services-line">
-            <h2 class="services-title">
-                What  actually I love to do
-            </h2>
+            </span>
+            <hr class="servic-line">
+            <h2 class="servic-title">What  actually I love to do</h2>
                 <ul class="services-list"> 
                     <li class="services-list-item">
                         <div class="services-div">
                             <img src="imges/ux_research.svg" alt="ux_research" width="62" height="60"> 
-                            <h3 class="services-div-title">UX Research</h3>
+                            <h3 class="servic-list-title">
+                                UX Research
+                            </h3>
                         </div>
-                        <p class="services-text">
+                        <p class="services-par">
                             New demos are continually added and buying a single license for Mak gives you access to all of
                             what's shown below, plus everything that will be added in the future.
                         </p>
@@ -88,165 +85,168 @@
                     <li class="services-list-item">
                         <div class="services-div">
                             <img src="imges/brand_design.svg" alt="brand_design" width="62" height="60">
-                            <h3 class="services-div-title">Brand Design</h3>
+                            <h3 class="servic-list-title">
+                                Brand Design
+                            </h3>
                         </div>
-                        <p class="services-text">
-                            New demos are continually added and buying a single license for Mak gives you access to all of
-                            what's shown below, plus everything that will be added in the future.
-                        </p>
+                            <p class="services-par">
+                                New demos are continually added and buying a single license for Mak gives you access to all of
+                                what's shown below, plus everything that will be added in the future.
+                            </p>
                     </li>
                     <li class="services-list-item">
                         <div class="services-div">
-                            <img src="imges/web_development.svg" alt="web_development" width="62" height="60">
-                            <h3 class="services-div-title">Web Development</h3>
+                            <img src="imges/web_development.svg" alt="phone" width="62" height="60">
+                            <h3 class="servic-list-title">
+                                Web Development
+                            </h3>
                         </div>
-                        <p class="services-text">
-                            New demos are continually added and buying a single license for Mak gives you access to all of
-                            what's shown below, plus everything that will be added in the future.
-                        </p></li>
-                    </ul>
-            </section>
-    
-            <!-- Portfolio -->
-            
-            <section class="portfolio container">
-                <a class="portfolio-link" href="#">
-                    Portfolio
-                </a>
-                <hr class="portfolio-line">
-                <h2 class="portfolio-title">
-                    All Creative Projects
-                </h2>
-                <div class="portfolio-div-link" >
-                    <a class="div-link" href="#">
-                        Explore More
-                    </a>
-                    <img src="imges/strelka.svg" alt="strelka">
-                </div>
-                <div class="portfolio-img">
-                    <img src="imges/img1.png" alt="img" width="540" height="427">
-                    <img src="imges/img2.png" alt="img" width="540" height="427">
-                </div>
-            </section>
-    
-            <!-- Clients -->
-    
-            <section class="clients container">
-                <a class="clients-link" href="#">
-                    Clients
-                </a>
-                <hr class="clients-line">
-                <h2 class="clients-title">
-                    Big Deal With
-                </h2>
-                    <ul class="clients-list">
-                        <li class="clients-list-link slack">
-                            <img src="imges/slack.svg" alt="slack">
-                                <h4>Slack</h4>
-                        </li>
-                        <li class="clients-list-link medium" >
-                            <img src="imges/medium.svg" alt="medium">
-                                <h4>Medium</h4>
-                        </li>
-                        <li class="clients-list-link microsoft">
-                            <img src="imges/microsoft.svg" alt="microsoft">
-                                <h4>Microsoft</h4>
-                        </li>
-                        <li class="clients-list-link zeplin">
-                            <img src="imges/zeplin.svg" alt="zeplin">
-                                <h4>Zeplin</h4>
-                        </li>
-                        <li class="clients-list-link shopify">
-                            <img src="imges/shopify.svg" alt="shopify">
-                                <h4>Shopify</h4>
-                        </li>
-                    </ul>
-            </section>
-    
-            <!-- Testimonals -->
-            
-            <section class="testimonals container"> 
-                <a class="testimonals-link" href="#">
-                    Testimonals
-                </a>
-                <hr class="testimonals-line">
-                <h2 class="testimonals-title">
-                    What People Says
-                </h2>
-                <div class="testimonals-div">
-                    <img src="imges/mark.svg" alt="mark"> 
-                    <img src="imges/mark.svg" alt="mark">
-                    <p class="testimonals-text">
-                        Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
-                    </p>
-                    <img class="testimonals-div-img" src="imges/michal_john.png" alt="michal_john">
-                    <h4 class="testimonals-div-title">Michal John</h4>
-                    <p>CEO of MZP</p>
-                    <img class="dot" src="imges/ellipse_active.png" alt="dot">
-                    <img class="dot" src="imges/ellipse.png" alt="dot">
-                    <img class="dot" src="imges/ellipse.png" alt="dot">
-                    <img class="dot" src="imges/ellipse.png" alt="dot">
-                    <img class="dot" src="imges/ellipse.png" alt="dot">
-                    <img class="dot" src="imges/ellipse.png" alt="dot">
-                </div>
-        </section><!-- Blog -->
-        
-        <section class="blog container">
-            <a class="blog-link" href="#">
+                            <p class="services-par">
+                                New demos are continually added and buying a single license for Mak gives you access to all of
+                                what's shown below, plus everything that will be added in the future.
+                            </p>
+                    </li>
+                </ul>
+        </section>
+
+        <section id="portfolio">
+            <span class="portfolio-span">
+                Portfolio
+            </span>
+            <hr class="portfolio-line">
+            <h2 class="portfolio-title">
+                All Creative Projects
+            </h2>
+            <div class="portfolio-link" >
+                <a href="#">Explore More</a>
+                <img src="imges/strelka.svg" alt="strelka">
+            </div>
+            <div class="portfolio-imag">
+                <img src="imges/img1.png" alt="img" width="540" height="427">
+                <img src="imges/img2.png" alt="img" width="540" height="427">
+            </div>
+        </section>
+
+        <section id="clients">
+            <span class="clients-span">
+                Portfolio
+            </span>
+            <hr class="clients-line">
+            <h2 class="clients-title">
+                Big Deal With
+            </h2>
+                <ul class="clients-list">
+                    <li class="clients-list-link slack">
+                        <img src="imges/slack.svg" alt="slack">
+                        <h4>
+                            Slack
+                        </h4>
+                    </li>
+                    <li class="clients-list-link medium" >
+                        <img src="imges/medium.svg" alt="medium">
+                        <h4>
+                            Medium
+                        </h4>
+                    </li>
+                    <li class="clients-list-link microsoft">
+                        <img src="imges/microsoft.svg" alt="microsoft">
+                        <h4>
+                            Microsoft
+                        </h4>
+                    </li>
+                    <li class="clients-list-link zeplin">
+                        <img src="imges/zeplin.svg" alt="zeplin">
+                        <h4>
+                            Zeplin
+                        </h4>
+                    </li>
+                    <li class="clients-list-link shopify">
+                        <img src="imges/shopify.svg" alt="shopify">
+                        <h4>
+                            Shopify
+                        </h4>
+                    </li>
+                </ul>
+        </section>
+
+        <section id="testimonals"> 
+            <span class="testimonals-span">
+                Testimonals
+            </span>
+            <hr class="testimonals-line">
+            <h2 class="testimonals-title">
+                What People Says
+            </h2>
+            <div class="testimonals-div"> 
+                <img  src="imges/mark.svg" alt="quote">
+                <img  src="imges/mark.svg" alt="quote">
+
+                <p class="testimonals-par">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                </p>
+                <img class="michaele" src="imges/michal_john.png" alt="michal_john">
+                <h4 class="testimonals-div-title">
+                    Michal John
+                </h4>
+                <p>CEO of MZP</p>
+                <img class="dots" src="imges/ellipse_active.png" alt="dots">
+                <img class="dots" src="imges/ellipse.png" alt="dots">
+                <img class="dots" src="imges/ellipse.png" alt="dots">
+                <img class="dots" src="imges/ellipse.png" alt="dots">
+                <img class="dots" src="imges/ellipse.png" alt="dots">
+                <img class="dots" src="imges/ellipse.png" alt="dots">
+
+            </div>
+                <img class="id1" src="imges/img_1.png" alt="id1" height="100">
+                <img class="id2" src="imges/img_2.png" alt="id2">
+                <img class="id3" src="imges/img_3.png" alt="id3">
+                <img class="id4" src="imges/img_4.png" alt="id4">
+        </section>
+
+        <section id="blog">
+            <span class="blogs-span">
                 Blog
-            </a>
-            <hr class="blog-line">
+            </span>
+            <hr class="blogs-line">
             <div class="blog-div">
-                <h2 class="blog-title">
+                <h class="blog-title">
                     Get News Feeds
-                </h2>
+                </h>
                 <div>
-                    <img src="imges/img3.png" alt="blogImg">
-                    <time class="blog-time" datetime="2020-07-20">
-                        20 June/2020
-                    </time>
+                    <img src="imges/img3.png" alt="img">
+                    <p class="blog-time">20 June/2020</p>
                     <p class="blog-text">
                         Technology is evolving rapidly. New devices and applications.
                     </p>
                 </div>
-           
-            <img class="blog-img" src="imges/img4.png" alt="blogImg2" width="255" height="350">
-            <img class="blog-img" src="imges/img5.png" alt="blogImg3"  width="255" height="350">
-        </div>
+                    <img class="blog-img" src="imges/img4.png" alt="img" width="255" height="350">
+                    <img class="blog-img" src="imges/img5.png" alt="img"  width="255" height="350">
+            </div>
         </section>
 
-        <!-- Contact -->
-        
-        <section class="contact container">
-            <a class="contact-link" href="#" >
+        <section id="contact">
+            <span class="contact-span">
                 Contact Me
-            </a>
+            </span>
             <hr class="contact-line">
             <div class="contact-div">
-                <h2 class="contact-title ">
+                <h2 class="contact-title">
                     Let me know if you want to talk 
                     about a potential collaboration.
                     I'm available for freelance work.
                 </h2>
-                <a class="contact-div-link" href="#">
-                    infoname@mail.com
-                </a>
+                    <a class="contact-link" href="#">
+                        infoname@mail.com
+                    </a>
             </div>
-
-                <p class="contact-question">
-                    What's your name?
-                </p>
-                <p class="contact-question">
-                    Your email 
-                </p>
-                <p class="contact-question">
-                    Tell me about your project
-                </p>
-                <button class="contact-button">
-                    Get a Quote
-                </button>
-           <div class="contact-footer">
-                <h4 class="contact-footer-title">
+            <input class="contact-input" type="text" placeholder="What's your name?">
+            <input class="contact-input" type="text" placeholder="Your email">
+            <input class="contact-input"  type="text" placeholder="Tell me about your project">
+            <button class="contact-button">
+                Get a Quote
+            </button>
+            <div class="contact-icons">
+                <h4 class="contact-heading">
                     Let's be Friends
                 </h4>
                 <ul class="contact-list">
@@ -262,12 +262,12 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imges/linkedln.svg" alt="li">
+                            <img src="imges/linkedln.svg" alt="linkedln">
                         </a>
                     </li>
                 </ul>
-           </div>
+            </div>
         </section>
-    </main>
+    </main>       
 </body>
 </html>
